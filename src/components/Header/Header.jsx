@@ -32,7 +32,7 @@ const Header = () => {
       className={`${
         isHeaderSticky ? 'fixed animate-slideDown' : ''
       } left-0 right-0 shadow-sm`}>
-      <div className="flex justify-between px-6 md:container md:mx-auto">
+      <div className="flex justify-between px-4 md:px-6 md:container md:mx-auto">
         <Logo>
           <h2>VIKTORS WORKOUT</h2>
         </Logo>
