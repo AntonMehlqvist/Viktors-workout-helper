@@ -38,7 +38,7 @@ const Header = () => {
         </Logo>
 
         <Nav>
-          <NavItem>Till toppen</NavItem>
+          <NavItem to="/">Hem</NavItem>
         </Nav>
       </div>
     </header>

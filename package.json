@@ -1,6 +1,6 @@
 {
-	"name": "viktors-workout-helper",
-	"homepage": "http://antonmehlqvist.github.io/viktors-workout-helper",
+  "name": "viktors-workout-helper",
+  "homepage": "http://antonmehlqvist.github.io/viktors-workout-helper",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,13 +14,14 @@
     "postcss": "^7.0.35",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-		"start": "craco start",
-		"deploy": "gh-pages -d build",
+    "start": "craco start",
+    "deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
