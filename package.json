@@ -1,5 +1,6 @@
 {
-  "name": "viktors-workout-helper",
+	"name": "viktors-workout-helper",
+	"homepage": "http://antonmehlqvist.github.io/viktors-workout-helper",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +19,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "craco start",
+		"start": "craco start",
+		"deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
@@ -40,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
