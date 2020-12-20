@@ -14,3 +14,15 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .rectangle {
+		padding-bottom: 50%;
+	}
+
+	@variants responsive, hover, focus {
+    .scaleup {
+			transform: scale(1.05);
+		}
+  }
+}

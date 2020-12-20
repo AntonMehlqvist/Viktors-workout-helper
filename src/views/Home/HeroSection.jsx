@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../components/Elements/Button';
-import Hero from '../components/Header/Hero/Hero';
+import Button from '../../components/Elements/Button';
+import Hero from '../../components/Header/Hero/Hero';
 
 const HeroSection = () => {
 	return (

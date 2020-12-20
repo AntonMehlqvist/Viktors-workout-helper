@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Layout from './components/Layout';
 
@@ -9,7 +9,6 @@ function App() {
       <BrowserRouter>
       	<Header />
         <Layout />
-        <Link to="/hej">hej</Link>
       </BrowserRouter>
     </div>
   );

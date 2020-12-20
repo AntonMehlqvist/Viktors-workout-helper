@@ -1,6 +1,7 @@
 const data = [
 	{
 		title: 'Helkroppspass med motståndsband',
+		slug: 'helkroppspass-med-motstandsband',
 		image: 'https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/16x9_760/public/2017/08/lets-bands-resistance-bands.jpg?itok=skCYawy5&timestamp=1503481629',
 		exercises: [
 			{

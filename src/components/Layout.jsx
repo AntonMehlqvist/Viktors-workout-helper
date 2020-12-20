@@ -1,17 +1,14 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import HeroSection from '../views/HeroSection';
+import Home from '../views/Home/Home';
+import SingleWorkout from '../views/Workouts/SingleWorkout';
 
 const Layout = () => {
 	return (
     <Switch>
-			<Route path="/hej">
-				<h1>hej</h1>
-			</Route>
+			<Route component={ SingleWorkout } path={ '/traningspass/:postName' } />
 
-			<Route path="/">
-				<HeroSection />
-			</Route>
+			<Route component={ Home } path="/" />
 
     </Switch>
   );

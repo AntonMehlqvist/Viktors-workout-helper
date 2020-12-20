@@ -1,4 +1,6 @@
 import React from 'react'
+import Container from '../../hoc/Container';
+import Overlay from '../../utility/Overlay';
 
 const Hero = ( { children, img } ) => {
 	return (
@@ -10,11 +12,9 @@ const Hero = ( { children, img } ) => {
           className="absolute inset-0 object-cover object-center w-full h-full"
         />
 
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <Overlay className="bg-black opacity-50" />
 
-        <div className="z-10 text-white sm:py-28 md:container md:mx-auto">
-          {children}
-        </div>
+        <Container className="z-10 text-white sm:py-28">{children}</Container>
       </section>
     </>
   );
