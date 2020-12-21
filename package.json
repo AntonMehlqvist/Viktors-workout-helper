@@ -1,6 +1,5 @@
 {
   "name": "viktors-workout-helper",
-  "homepage": "http://antonmehlqvist.github.io/viktors-workout-helper",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
