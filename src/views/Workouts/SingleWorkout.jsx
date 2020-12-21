@@ -22,8 +22,8 @@ const SingleWorkout = ( { match } ) => {
           <H1 className="mb-6 md:mb-9">{title}</H1>
 
           <ul className="my-6">
-            {exercises.map((exercise) => (
-              <Exercise exerciseData={exercise} key={exercise.title} />
+            {exercises.map( ( exercise, index ) => (
+              <Exercise exerciseData={exercise} index={ index + 1 } key={exercise.title} />
             ))}
           </ul>
       </Section>

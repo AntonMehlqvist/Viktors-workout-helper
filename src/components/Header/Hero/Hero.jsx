@@ -2,10 +2,10 @@ import React from 'react'
 import Container from '../../hoc/Container';
 import Overlay from '../../utility/Overlay';
 
-const Hero = ( { children, img } ) => {
+const Hero = ( { children, img, className } ) => {
 	return (
     <>
-      <section className="relative flex flex-col items-center px-4 py-20 text-center md:px-6">
+      <section className={ `relative flex flex-col items-center py-20 text-center ${ className }` }>
         <img
           src={img}
           alt=""

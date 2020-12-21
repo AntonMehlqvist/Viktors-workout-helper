@@ -3,7 +3,7 @@ import React from 'react'
 const Nav = ( { children } ) => {
 	return (
     <nav>
-      <ul className="flex justify-items">
+      <ul className="flex h-full">
 				{ children }
       </ul>
     </nav>

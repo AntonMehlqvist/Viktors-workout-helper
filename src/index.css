@@ -17,7 +17,7 @@ code {
 
 @layer utilities {
   .rectangle {
-		padding-bottom: 50%;
+		padding-bottom: 65%;
 	}
 
 	@variants responsive, hover, focus {

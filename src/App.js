@@ -5,7 +5,7 @@ import Layout from './components/Layout';
 
 function App() {
 	return (
-    <div className="App bg-gray-50">
+    <div className="bg-white App" >
       <BrowserRouter>
       	<Header />
         <Layout />

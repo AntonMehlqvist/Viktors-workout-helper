@@ -3,12 +3,13 @@ import workouts from '../../../workoutData';
 import WorkoutCard from './WorkoutCard';
 import Container from '../../hoc/Container';
 import Section from '../../hoc/Section';
+import { H2 } from '../../Typography/Typography';
 
 const WorkoutGrid = () => {
 	return (
 		<Section>
 			<Container>
-				<h2 className="text-3xl font-bold">Välj ett träningspass</h2>
+				<H2 className="mb-6 md:mb-9">Välj ett träningspass</H2>
 
 				<ul className="gap-5 sm:grid sm:grid-cols-2 md:grid-cols-3" >
 					{ workouts.map( workout => <WorkoutCard workoutData={ workout } key={ workout.title } /> ) }

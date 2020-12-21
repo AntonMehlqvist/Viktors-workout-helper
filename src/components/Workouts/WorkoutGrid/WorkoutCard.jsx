@@ -4,23 +4,28 @@ import Overlay from '../../utility/Overlay';
 
 const WorkoutCard = ( { workoutData: { title, slug, image, exercises } } ) => {
 	return (
-    <article className="relative transition-transform rounded-sm shadow-lg md:hover:scaleup hover:shadow-sm">
+    <article className="relative px-6 py-3 overflow-hidden transition-transform rounded-sm shadow-lg md:hover:scaleup hover:shadow-sm">
       <Link
         to={`/traningspass/${slug}`}
         className="inline-block w-full rectangle">
-        <img
-          src={image}
-          alt="Workout"
-          className="absolute inset-0 object-cover object-center w-full h-full"
-        />
 
-        <Overlay className="bg-red-900 opacity-30" />
-        <Overlay className="bg-black opacity-70" />
+				<Overlay>
+					<img
+						src={image}
+						alt="Workout"
+						className="object-cover object-center w-full h-full"
+					/>
+				</Overlay>
 
-        <div className="absolute inset-0 z-10 text-white">
-          <h3>{title}</h3>
-          <p>Exercises: {exercises.length}</p>
-        </div>
+        <Overlay className="bg-blue-900 opacity-60" />
+        <Overlay className="bg-black opacity-75" />
+
+        <Overlay className="z-10 flex flex-col justify-center text-center text-white">
+          <h3 className="mb-6 text-2xl font-bold tracking-wide uppercase">
+            <i>{title}</i>
+          </h3>
+          <p className="text-lg font-bold text-gray-50">Exercises: {exercises.length}</p>
+        </Overlay>
       </Link>
     </article>
   );
