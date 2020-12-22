@@ -5,6 +5,7 @@ import Logo from './Logo';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import Container from '../hoc/Container';
 
+
 const Header = () => {
 
 	const [ isHeaderSticky, setIsHeaderSticky ] = useState( false );
@@ -32,17 +33,14 @@ const Header = () => {
     <header
       className={`${
         isHeaderSticky ? 'fixed animate-slideDown' : ''
-      } left-0 right-0 shadow-sm bg-white`}>
+      } left-0 right-0 shadow-sm bg-white z-50`}>
+      <Container className="flex justify-between px-4 md:px-6">
+        <Logo/>
 
-			<Container className="flex justify-between px-4 md:px-6">
-				<Logo>
-					<h2>VIKTORS WORKOUT</h2>
-				</Logo>
-
-				<Nav>
-					<NavItem to="/">Hem</NavItem>
-				</Nav>
-			</Container>
+        <Nav>
+          <NavItem to="/">Hem</NavItem>
+        </Nav>
+      </Container>
     </header>
   );
 }

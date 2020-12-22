@@ -3,9 +3,10 @@ import { H2 } from '../Typography/Typography'
 
 const Exercise = ( { index, exerciseData: { title, image, sets, reps, description } } ) => {
 	return (
-    <li>
-      <H2 className="mb-4 italic text-gray-800">
-        Exercise {index}: {title}
+    <li className="mb-16">
+      <H2 className="mb-6 italic text-gray-800">
+        <span className="block text-sm font-medium leading-3 tracking-wider uppercase sm:text-base">Exercise {index}</span>
+				{title}
       </H2>
       <img
         src={image}
