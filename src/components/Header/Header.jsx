@@ -4,6 +4,7 @@ import Nav from './Nav/Nav';
 import Logo from './Logo';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import Container from '../hoc/Container';
+import { NavLink } from 'react-router-dom';
 
 
 const Header = () => {
@@ -35,7 +36,9 @@ const Header = () => {
         isHeaderSticky ? 'fixed animate-slideDown' : ''
       } left-0 right-0 shadow-sm bg-white z-50`}>
       <Container className="flex justify-between px-4 md:px-6">
-        <Logo/>
+        <NavLink to="/">
+          <Logo />
+        </NavLink>
 
         <Nav>
           <NavItem to="/">Hem</NavItem>

@@ -5,7 +5,7 @@ const Exercise = ( { index, exerciseData: { title, image, sets, reps, descriptio
 	return (
     <li className="mb-16">
       <H2 className="mb-6 italic text-gray-800">
-        <span className="block text-sm font-medium leading-3 tracking-wider uppercase sm:text-base">Exercise {index}</span>
+        <span className="block mb-1 text-xs font-medium leading-3 tracking-wider uppercase lg:text-sm sm:text-base">Exercise {index}</span>
 				{title}
       </H2>
       <img

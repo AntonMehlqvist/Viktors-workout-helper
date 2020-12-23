@@ -3,6 +3,12 @@ import Button from '../../components/Elements/Button';
 import Hero from '../../components/Header/Hero/Hero';
 
 const HeroSection = () => {
+	const scrollToWorkouts = () => {
+		const workoutGrid = document.querySelector( '#workout-grid' );
+
+		workoutGrid?.scrollIntoView();
+	}
+
 	return (
 		<Hero
 				img={'https://miro.medium.com/max/14144/1*toyr_4D7HNbvnynMj5XjXw.jpeg'}
@@ -16,7 +22,7 @@ const HeroSection = () => {
           Klicka på knappen och svettas lite skitunge!
         </h3>
 
-        <Button to="/">Klicka då!</Button>
+        <Button onClick={ () => scrollToWorkouts() }>Klicka då!</Button>
       </Hero>
 	)
 }

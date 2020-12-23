@@ -7,7 +7,7 @@ import { H2 } from '../../Typography/Typography';
 
 const WorkoutGrid = () => {
 	return (
-		<Section>
+		<Section sectionID="workout-grid" >
 			<Container>
 				<H2 className="mb-6 md:mb-9">Välj ett träningspass</H2>
 

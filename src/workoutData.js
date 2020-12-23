@@ -2,6 +2,7 @@ const data = [
 	{
 		title: 'Helkroppspass med motståndsband',
 		slug: 'helkroppspass-med-motstandsband',
+		description: 'Helt perfekt pass att göra om du inte får gå till gymmet men ändå vill ha så ont i kroppen att du gråter lite.',
 		image: 'https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/16x9_760/public/2017/08/lets-bands-resistance-bands.jpg?itok=skCYawy5&timestamp=1503481629',
 		exercises: [
 			{

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Section = ( { children, className } ) => {
+const Section = ( { children, className, sectionID } ) => {
 	return (
-		<section className={ `py-12 md:py-20 ${ className }` }>
+		<section id={ sectionID && sectionID } className={ `py-12 md:py-20 ${ className }` }>
 			{ children }
 		</section>
 	)
