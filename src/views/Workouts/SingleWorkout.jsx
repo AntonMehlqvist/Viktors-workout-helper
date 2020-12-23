@@ -3,6 +3,7 @@ import Exercise from '../../components/Workouts/Exercise';
 import workouts from '../../workoutData';
 import { H1 } from '../../components/Typography/Typography'
 import Container from '../../components/hoc/Container';
+import WorkoutGrid from '../../components/Workouts/WorkoutGrid/WorkoutGrid';
 
 const SingleWorkout = ( { match } ) => {
 	const [ workout ] = workouts.filter( workout => match.params.postName === workout.slug );
@@ -11,7 +12,7 @@ const SingleWorkout = ( { match } ) => {
 
 	return (
     <>
-      <div className="md:px-6 md:container md:mx-auto">
+      <div className="md:px-6 md:max-w-screen-xl md:mx-auto">
         <img
           src={image}
           alt="featured"
@@ -20,21 +21,26 @@ const SingleWorkout = ( { match } ) => {
       </div>
 
       <Container>
-        <div className="max-w-2xl py-6 mx-auto md:py-9">
+        <div className="max-w-2xl py-6 mx-auto md:py-12">
           <H1 className="mb-3 md:mb-5">{title}</H1>
 
-          <p className="mb-12 font-normal leading-normal md:mb-15">{description}</p>
+          <p className="mb-12 font-normal leading-normal md:mb-15">
+            {description}
+          </p>
 
           <ul className="my-6">
             {exercises.map((exercise, index) => (
               <Exercise
                 exerciseData={exercise}
                 index={index + 1}
+                isLastExercise={index + 1 === exercises.length}
                 key={exercise.title}
               />
             ))}
           </ul>
         </div>
+
+        <WorkoutGrid title="Fler träningspass" match={ match } />
       </Container>
     </>
   );

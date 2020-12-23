@@ -49,5 +49,9 @@ code {
     .scaleup {
 			transform: scale(1.05);
 		}
+
+    .scaledown {
+			transform: scale(.95);
+		}
   }
 }

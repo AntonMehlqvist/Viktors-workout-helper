@@ -41,7 +41,8 @@ const Header = () => {
         </NavLink>
 
         <Nav>
-          <NavItem to="/">Hem</NavItem>
+          <NavItem exact to="/">Hem</NavItem>
+          <NavItem to="/traningspass">Träningspass</NavItem>
         </Nav>
       </Container>
     </header>

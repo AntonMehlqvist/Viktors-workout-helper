@@ -4,7 +4,7 @@ import Overlay from '../../utility/Overlay';
 
 const WorkoutCard = ( { workoutData: { title, slug, image, exercises } } ) => {
 	return (
-    <article className="relative overflow-hidden transition-transform rounded-sm shadow-lg md:hover:scaleup hover:shadow-sm">
+    <article className="relative mb-6 overflow-hidden transition-transform rounded-sm shadow-lg sm:mb-0 md:hover:scaleup hover:shadow-sm focus:scaledown focus:shadow-sm">
       <Link
         to={`/traningspass/${slug}`}
         className="inline-block w-full rectangle">
@@ -23,8 +23,8 @@ const WorkoutCard = ( { workoutData: { title, slug, image, exercises } } ) => {
           <h3 className="mb-6 text-2xl font-bold tracking-wide uppercase">
             <i>{title}</i>
           </h3>
-          <p className="text-lg font-bold text-gray-50">
-            Exercises: {exercises.length}
+          <p className="text-base font-bold tracking-wider md:text-lg text-gray-50">
+            Övningar: {exercises.length}
           </p>
         </Overlay>
       </Link>
