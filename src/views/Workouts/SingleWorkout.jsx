@@ -40,8 +40,9 @@ const SingleWorkout = ( { match } ) => {
           </ul>
         </div>
 
-        <WorkoutGrid title="Fler träningspass" match={ match } />
       </Container>
+
+			<WorkoutGrid title="Fler träningspass" match={ match } />
     </>
   );
 }
