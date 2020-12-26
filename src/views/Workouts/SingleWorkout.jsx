@@ -4,6 +4,7 @@ import workouts from '../../workoutData';
 import { H1 } from '../../components/Typography/Typography'
 import Container from '../../components/hoc/Container';
 import WorkoutGrid from '../../components/Workouts/WorkoutGrid/WorkoutGrid';
+import CircuitCreator from '../../components/CircuitCreator/CircuitCreator';
 
 const SingleWorkout = ( { match } ) => {
 	const [ workout ] = workouts.filter( workout => match.params.postName === workout.slug );
@@ -43,6 +44,8 @@ const SingleWorkout = ( { match } ) => {
       </Container>
 
 			<WorkoutGrid title="Fler träningspass" match={ match } />
+
+			<CircuitCreator exercises={ exercises } />
     </>
   );
 }

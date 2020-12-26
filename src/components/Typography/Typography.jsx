@@ -18,3 +18,12 @@ export const H2 = ( { children, className } ) => (
 		{ children }
 	</h2>
 );
+export const H3 = ( { children, className } ) => (
+	<h3
+		className={
+			`text-xl font-bold md:text-2xl tracking-wide ${ className }`
+		}
+	>
+		{ children }
+	</h3>
+);
