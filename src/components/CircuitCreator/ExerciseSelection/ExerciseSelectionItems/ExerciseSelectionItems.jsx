@@ -3,7 +3,7 @@ import ExerciseSelectionItem from './ExerciseSelectionItem/ExerciseSelectionItem
 
 const ExerciseSelectionItems = ( { exercises, exercises: { title } } ) => {
 	return (
-    <div className="border-t-2 border-gray-400">
+    <div>
       {exercises.map((exercise) => (
         <ExerciseSelectionItem exercise={exercise} key={title} />
       ))}
