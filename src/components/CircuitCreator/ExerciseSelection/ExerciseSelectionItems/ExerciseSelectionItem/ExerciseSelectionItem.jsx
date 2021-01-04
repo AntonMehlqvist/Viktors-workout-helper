@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ReactComponent as Minus } from '../../../../../images/icon_minus.svg';
 import { ReactComponent as Plus } from '../../../../../images/icon_plus.svg';
-import ExerciseOptions from './ExerciseOptions';
+import ExerciseOptions from './ExerciseOptions/ExerciseOptions';
 
 const ExerciseSelectionItem = ({
   exercise, exercise: { title }

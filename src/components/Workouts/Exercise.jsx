@@ -1,7 +1,7 @@
 import React from 'react'
 import { H2 } from '../Typography/Typography'
 
-const Exercise = ( { index, isLastExercise, exerciseData: { title, image, sets, reps, description } } ) => {
+const Exercise = ( { index, isLastExercise, exerciseData: { title, image, sets, repDescription, description } } ) => {
 	return (
     <li className={ ! isLastExercise ? 'mb-16' : '' }>
       <H2 className="mb-6 italic text-gray-800">
@@ -17,7 +17,7 @@ const Exercise = ( { index, isLastExercise, exerciseData: { title, image, sets, 
         <strong>Sets: </strong> {sets}
       </p>
       <p className="mb-4">
-        <strong>Reps: </strong> {reps}
+        <strong>Reps: </strong> {repDescription}
       </p>
       <p>{description}</p>
     </li>
