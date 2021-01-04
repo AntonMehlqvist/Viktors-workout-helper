@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { ReactComponent as Minus } from '../../../../../images/icon_minus.svg';
 import { ReactComponent as Plus } from '../../../../../images/icon_plus.svg';
+import ExerciseOptions from './ExerciseOptions';
 
 const ExerciseSelectionItem = ({
-  exercise: { title }
+  exercise, exercise: { title }
 } ) => {
 	const [ isSelected, setIsSelected ] = useState( false );
   return (
@@ -20,7 +21,7 @@ const ExerciseSelectionItem = ({
         className={`${
           isSelected ? 'max-h-96' : 'max-h-0'
         } overflow-hidden transition-all duration-500`}>
-
+					<ExerciseOptions exercise={ exercise } />
       </div>
     </div>
   );
