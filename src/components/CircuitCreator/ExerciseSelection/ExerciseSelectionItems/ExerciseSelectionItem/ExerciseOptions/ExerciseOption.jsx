@@ -8,7 +8,7 @@ const ExerciseOption = ( { name, currentValue, setOption } ) => {
       <p>{name}</p>
 
       <div className="flex items-center">
-        <button onClick={ () => setOption( currentValue - 1 )}>
+        <button onClick={ () => setOption( currentValue - 1 ) }>
           <Minus className="w-8 p-2 border-2 rounded-lg" />
         </button>
 				<span className="w-8 text-center">
