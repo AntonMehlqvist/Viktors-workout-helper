@@ -9,11 +9,13 @@ const ExerciseSelectionItem = ({
 	const [ isSelected, setIsSelected ] = useState( false );
   return (
     <div className="p-4 mb-5 rounded-md shadow-md bg-gray-50">
-      <div className="flex justify-between">
+      <div className="flex items-center justify-between">
         <h4>{title}</h4>
 
-        <button className="w-4" onClick={() => setIsSelected(!isSelected)}>
-          {isSelected ? <Minus /> : <Plus />}
+        <button onClick={() => setIsSelected(!isSelected)}>
+          { isSelected ?
+						<Minus className="w-8 p-2" /> :
+						<Plus className="w-8 p-2" /> }
         </button>
       </div>
 

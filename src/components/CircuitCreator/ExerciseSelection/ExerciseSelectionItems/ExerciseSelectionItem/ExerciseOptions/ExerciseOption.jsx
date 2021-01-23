@@ -14,7 +14,7 @@ const ExerciseOption = ( { name, currentValue, setOption } ) => {
 				<span className="w-8 text-center">
 					{ currentValue }
 				</span>
-        <button onClick={ () => setOption( currentValue + 1 )}>
+        <button onClick={ () => setOption( currentValue + 1 ) }>
           <Plus className="w-8 p-2 border-2 rounded-lg" />
         </button>
       </div>

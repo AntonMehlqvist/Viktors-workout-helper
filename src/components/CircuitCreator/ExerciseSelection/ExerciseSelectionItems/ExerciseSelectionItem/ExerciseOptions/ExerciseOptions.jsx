@@ -15,9 +15,9 @@ const ExerciseOptions = ( { exercise: { minReps, maxReps, time: exerciseTime } }
     <ul className="py-4 list-none">
       { time && (
         <ExerciseOption
-					name="Time"
+					name="Time (seconds)"
           currentValue={ time }
-          setOption={ ( newValue ) => setOptionsHandler( time, newValue, setTime ) }
+          setOption={ ( newValue) => setOptionsHandler( time, newValue, setTime ) }
         />
       ) }
 
